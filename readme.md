@@ -80,5 +80,3 @@ For this checkpoint, you need to build a simple application for tracking Notes.
 
 Fork this repository and clone your fork locally. Commit as you go. When you are
 finished, push to GitHub.
-
-**Wait until the end of the hour to make your Pull Request**
