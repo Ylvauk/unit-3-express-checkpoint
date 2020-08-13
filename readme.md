@@ -5,7 +5,7 @@
 Fork and clone this repository. After cloning down **your fork**...
 
 ```bash
- $ cd checkpoint-express-mongoose-short
+ $ cd checkpoint-express
  $ npm install
 ```
 
