@@ -19,15 +19,27 @@ To run the tests in the terminal, run `npm test`.
 
 > Note: The test suite is located in `./test`.
 
+## Requirements
+
+At least 75% of the tests must pass. The test command must run without errors.
+
+The submission is due by the date specified on your cohort calendar.
+
 ## Instructions
 
 For this checkpoint, you need to build a simple application for tracking Notes.
 
+BEFORE you start, create a `.env` file in the root of this directory and create a `DATABASE_URL` variable. Set it equal to your connection string, changing the name of the database to something like `notes-api`.
+
 ### Requirements
 
 1. There is already a `package.json` file with the dependencies necessary for
-   running the tests. You will have to manually `npm install` everything else
-   required to build your application server with Express and Mongoose.
+   running the tests. No other dependencies have been installed. You will have to manually `npm install` everything else
+   required to build your application server with Express and Mongoose and Dotenv.
+
+```cli
+$ npm i express mongoose dotenv
+```
 
 2. Create a `controllers` directory. Inside `controllers`, create two files:
    `notes.js` and `users.js`.
@@ -63,7 +75,7 @@ For this checkpoint, you need to build a simple application for tracking Notes.
 
 **NOTES:**
 
-- You can refer to previous lessons and notes that you have if you forget
+- You should refer to previous lessons and notes that you have if you forget
   syntax.
 - We've provided the necessary configuration for the database connection, some
   of the Model definition, and some of the basic express app boilerplate. Don't
@@ -73,7 +85,7 @@ For this checkpoint, you need to build a simple application for tracking Notes.
   The tests will only pass for the appropriate types.
 - You don't need to create any data in the database for the tests to pass.
 - If something doesn't work, try reordering it.
-- Test with postman!
+- Test your routes with postman!
 - Do not modify the tests in `tests/index.js`!
 
 ## Submission

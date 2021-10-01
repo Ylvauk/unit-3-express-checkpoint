@@ -1,7 +1,6 @@
-const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://localhost/notes-checkpoint", {useNewUrlParser: true});
-
-mongoose.Promise = Promise;
+require('dotenv').configure();
+const mongoose = require('mongoose');
+const mongoURI = process.env.DATABASE_URL;
+mongoose.connect(mongoURI);
 
 module.exports = mongoose;
